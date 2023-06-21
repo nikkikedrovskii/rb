@@ -1,0 +1,15 @@
+info.app:
+  name: RB test project
+
+spring:
+  codec:
+    max-in-memory-size: 5MB
+  datasource:
+    url: jdbc:postgresql://localhost:5002/rbtest?currentSchema=public
+    username: rbtest
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog-master.xml
