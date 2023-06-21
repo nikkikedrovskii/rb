@@ -39,7 +39,10 @@ This repository contains an application with the following 7 endpoints:
 # 7. POST /api/v1/auth/authenticate - authenticate 
     Request Body Schema: application/json
      * email - String 
-     * password - String
+     * password - String 
+
+     *Note: To avoid complicating the system, the mail and password were 
+      set statically in class UserDao. email - email@gmail.com, password - password*
 
 To get started, you need to authenticate first by using to authenticate endpoint to obtain an access token. This token will be used to access other endpoints.
 
